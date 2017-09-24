@@ -1,0 +1,131 @@
+@font-face {
+    font-family: haas;
+    src: url(NHaasGroteskDSPro-95Blk.otf);
+}
+@font-face {
+    font-family: noe;
+    src: url(noe-display-regular-italic.ttf);
+}
+@font-face {
+    font-family: gt;
+    src: url(GT-America-Regular.otf);
+}
+
+
+
+
+body {
+  width: 84%;
+  margin: auto;
+  background: linear-gradient(90deg, #fff 20px, transparent 1%) center, linear-gradient(#fff 20px, transparent 1%) center, rgba(158, 158, 158, 1);
+  background-size: 22px 22px;
+}
+
+
+#content {
+  /*columns: 360px 4;*/
+  margin-top: 120px;
+}
+
+#desc {
+  margin-top: 90px;
+  width: 420px;
+  outline: 20px solid white;
+  background-color: white;
+}
+
+#desc p {
+  font-family:gt;
+  font-size: 0.9em;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.dayBlock {
+  outline: 20px solid white;
+  background-color: white;
+}
+
+
+.date {
+  display: inline-block;
+  font-size: 1.7em;
+  font-family: noe;
+  background-color: yellow;
+  margin-bottom: 20px;
+}
+
+.time {
+  font-family: gt;
+  font-size: 0.85em;
+  background-color: #f3f3f3;
+  width: 92px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.subject {
+  font-family: gt;
+  font-size: 1.5em;
+  margin-top: 5px;
+  margin-bottom: 12px;
+}
+
+.building {
+  font-family: gt;
+  font-size: 1em;
+}
+
+.lecturer {
+  font-family: gt;
+  font-size: 1em;
+  margin-bottom: 60px;
+}
+
+
+.time:empty, .subject:empty, .building:empty, .lecturer:empty {
+  display: none;
+}
+
+
+
+.number{
+  font-family: haas;
+  font-size: 8em;
+  text-shadow: -15px -15px 0 #fff, 15px -15px 0 #fff, -15px 15px 0 #fff, 15px 15px 0 #fff;
+  margin-top: -5px;
+}
+
+
+
+
+@media all and (max-width:540px) {
+  body {
+    width: 87%;
+    overflow-x: hidden;
+  }
+  #desc {
+    width: 280px;
+    margin-top: 67px;
+  }
+  #content {
+    width: 90vw;
+    margin-top: 100px;
+  }
+  .numBlock {
+    display: inline-block;
+    width: 195px;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .title-image {
+    width: 18px;
+  }
+  .number {
+    font-size: 4.2em;
+    position: relative;
+    margin-top: 0;
+  }
+}
